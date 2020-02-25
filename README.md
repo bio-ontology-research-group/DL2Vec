@@ -1,1 +1,38 @@
-# DL2Vec
+# DL2vec
+
+DL2vec is a project that can convert different types of axioms into graph representation, and then generate an embedding representation for each node and edge.
+
+The main covnertion tool is in DL2vec_embed folder
+
+## pre-installled necessary packages
+python >= 3.4 <br>
+pandas >=0.24.2 <br>
+numpy >= 1.16.2 <br>
+torch >= 1.0.1 <br>
+networkx >= 2.3 <br>
+scipy >= 1.2.1 <br>
+scikit-learn >=0.20.3 <br>
+Groovy (Groovy Version: 2.4.10 JVM: 1.8.0_121) with Grape for dependency management (http://docs.groovy-lang.org/latest/html/documentation/grape.html).
+
+## running DL2vec
+1. download all the files from this repository and put it into a directory named with DL2vec
+2. generate the embedding representation for each entity
+### generate the embeddings
+    python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file"
+
+where the following are mandatory Arguments: <br>
+1. ontology_file: ontology file congtains ontology in owl format
+2. association file: file contains entity-class associations
+3. outfile: output file contains the embedding model
+If one of these two mandatory files is missing, an error message will be displayed <br>
+you can also specify the following optional arguments:<br>
+1. -h, --help show the help message and exit
+2. window_size: window size for Word2Vec
+3. -mincount minimum count value for Word2Vec
+4. entity_list: the entity file in which each entity need to start the random walk and generate the embedding
+
+## Output
+The script will save a model that can generate embeddings for each entity <br>
+
+## Reference
+If you find our work useful, please cite:
