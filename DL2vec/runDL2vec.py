@@ -8,7 +8,7 @@ from generate_graph import *
 from compute_vectors import *
 from networkx.readwrite import json_graph
 
-parser = argparse.ArgumentParser(description = "HOG2Vec: it is a tool can convert the complext axioms in the ontology into graph representation")
+parser = argparse.ArgumentParser(description = "Dl2Vec: it is a tool can convert the complext axioms in the ontology into graph representation")
 
 parser.add_argument("-ontology", nargs = '?', metavar = "ontology OWL file", type = str,
                      help = "File containing ontology in OWL format",default='')
@@ -40,17 +40,17 @@ outfile =args.outfile
 entity_list =args.entity_list
 
 if (ontology_file is '' ):
-	print ("\nError:Mandatory ontology file missing. For help, run: python runHOG2Vec.py --help\n")
+	print ("\nError:Mandatory ontology file missing. For help, run: python runDL2Vec.py --help\n")
 	sys.exit()
 if (association_file is ''):
-	print ("\nError:Mandatory association file missing. For help, run: python runHOG2Vec.py --help\n")
+	print ("\nError:Mandatory association file missing. For help, run: python runDL2Vec.py --help\n")
 	sys.exit()
 if (outfile is ''):
-	print ("\nError:Mandatory output-file name missing. For help, run: python runHOG2Vec.py --help\n")
+	print ("\nError:Mandatory output-file name missing. For help, run: python runDL2Vec.py --help\n")
 	sys.exit()
 
 if entity_list is "":
-    entity_list ==association_file
+    entity_list =association_file
 
 if (model != 'sg' and model != 'cbow'):
 	model ='sg'
