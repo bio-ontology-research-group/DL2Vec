@@ -17,7 +17,6 @@ import torch.optim as optim
 from scipy.stats import rankdata
 import sys
 import random
-random.seed(42)
 import argparse
 import sys
 import os
