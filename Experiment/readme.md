@@ -3,8 +3,11 @@ We design DL2Vec and apply this method on disease gene prioritization task.
 Here we put the dataset link and data preprocessing file here.
 In order to allow other people to reproduce the same performance, we describe more details in the following.
 
+##  Package dependency
+please refer the package dependencies as same as the dependencies of DL2vec
+
 ## Data set downloading
-create a dictionary and put the all the following dataset into data folder<br>
+create a dictionary and put all the following dataset into data folder<br>
 [Human/Mouse Orthology with phenotypes](http://www.informatics.jax.org/downloads/reports/HMD_HumanPhenotype.rpt)<br>
 [Association of genes with Diseases](http://www.informatics.jax.org/downloads/reports/MGI_DO.rpt)<br>
 [phenotype Associations](https://hpo.jax.org/app/download/annotation)<br>
@@ -14,10 +17,10 @@ create a dictionary and put the all the following dataset into data folder<br>
 
 
 ## data preprocessing
-  python datapreprocessing.py
+    python data_preprocessing.py
 
 ## generate the embedding
-
+    
 
 ## train pointwise ranking model 
 
