@@ -36,3 +36,6 @@ The script will save a model that can generate embeddings for each entity <br>
 
 ## Reference
 If you find our work useful, please cite:
+
+## Acknowledgement
+there are two files ProcessOntology.groovy and getMetadata.groovy that are adapted from [OPA2vec](https://github.com/bio-ontology-research-group/opa2vec) 
