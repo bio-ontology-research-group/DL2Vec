@@ -75,12 +75,9 @@ def run_walk(nodes,G):
 
 
 
-
-
-
 def write_file(pair):
     with lock:
-        with open("data/walks.txt", "a") as fp:
+        with open("walks.txt", "a") as fp:
             for p in pair:
                 for sub_p in p:
                     fp.write(str(sub_p)+" ")
@@ -103,6 +100,6 @@ def gene_node_vector(graph, entity_list,outfile):
     run_walk(nodes,G)
 
     print("start to train the word2vec models")
-    sentences=gensim.models.word2vec.LineSentence("data/walks.txt")
+    sentences=gensim.models.word2vec.LineSentence("walks.txt")
     model=gensim.models.Word2Vec(sentences,sg=1, min_count=1, size=100, window=10,iter=30,workers=5)
     model.save(outfile)

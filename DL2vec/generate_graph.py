@@ -7,14 +7,6 @@ from tree import Stack
 
 
 
-# data_type=sys.argv[1]
-
-
-
-# annotation_association="GraphSAGE/data/"+data_type+"_train.txt"
-# disease_gene_association="GraphSAGE/data/"+data_type+"_disease_gene.pkl"
-
-
 
 
 def split_sentence(sentence):
@@ -91,31 +83,32 @@ def convert_triple(data):
                 new_node = new_relation+" "+tail_node
                 stack.push(new_node)
             else:
-                if stack.peak() =="(" or stack.peak() =="and" or stack.peak()=="or":
+                if (not stack.is_empty()):
+                    if stack.peak() =="(" or stack.peak() =="and" or stack.peak()=="or":
 
-
-                    for da in temp_data:
-                        stack.push(da)
-
-
-                else:
-                    new_temp_data=[]
-                    while judge_condition(stack):
-                        new_temp_data.append(stack.pop())
-                    if new_temp_data!=[]:
-                        new_relation = new_temp_data[-1]
-                        for da in temp_data:
-                            if da !="and" and da !="or":
-                                new_element = new_relation+" "+da
-                                stack.push(new_element)
-                        # for da in new_temp_data:
-                        #     if da !="and" and da !="or":
-                        #         new_element = new_relation+" "+da
-                        #         stack.push(new_element)
-                    else:
 
                         for da in temp_data:
                             stack.push(da)
+
+
+                    else:
+                        new_temp_data=[]
+                        while judge_condition(stack):
+                            new_temp_data.append(stack.pop())
+                        if new_temp_data!=[]:
+                            new_relation = new_temp_data[-1]
+                            for da in temp_data:
+                                if da !="and" and da !="or":
+                                    new_element = new_relation+" "+da
+                                    stack.push(new_element)
+                            # for da in new_temp_data:
+                            #     if da !="and" and da !="or":
+                            #         new_element = new_relation+" "+da
+                            #         stack.push(new_element)
+                        else:
+
+                            for da in temp_data:
+                                stack.push(da)
 
         else:
             stack.push(entity)
@@ -139,14 +132,6 @@ def convert_triple(data):
 
 
                 axiom=axiom.split(" ")
-
-                # for ax in axiom:
-                #     if ax in ["only","max","exactly","min","some"]:
-                #         print("something is wrong")
-                #         print(axiom)
-                #         print(data)
-                #         break
-
                 result.append(axiom)
 
 
@@ -163,14 +148,9 @@ def convert_triple(data):
         new_relation=final_axioms[-1]
         axiom = new_relation+" "+end_node
         axiom=first_entity+" "+axiom
-        # print(axiom)
+
 
         axiom=axiom.split(" ")
-        #
-        # for ax in axiom:
-        #     if ax in ["only","max","exactly","min","some"]:
-        #
-        #         break
 
         result.append(axiom)
 
@@ -231,15 +211,3 @@ def generate_graph(annotation,axiom_file):
 
 
     return G
-
-
-
-#
-# dic = dict()
-# index = 0
-#
-# for node in G.nodes():
-#     dic[node] = index
-#     index += 1
-#
-# print('the numberof ndoes in the graph', str(index))
