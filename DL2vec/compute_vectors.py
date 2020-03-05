@@ -17,7 +17,7 @@ import pickle as pkl
 lock = Lock()
 
 WALK_LEN=30
-N_WALKS=50
+N_WALKS=100
 
 global data_pairs
 data_pairs = []
