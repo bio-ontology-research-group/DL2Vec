@@ -20,7 +20,7 @@ create a dictionary and put all the following dataset into data folder<br>
     python data_preprocessing.py
 
 ## generate the embedding
-    python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file"
+    python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
     
 ## train pointwise ranking model 
     python pointwise_ranking.py -associations "disease and gene association file (dictionary format)" -ranking_candidate "all the genes that need to be prioritized (list format) -embedding_model "DL2vec embedding model)
