@@ -18,7 +18,8 @@ create a dictionary and put all the following dataset into data folder<br>
 
 ## data preprocessing
     python data_preprocessing.py
-
+## data preprocessing
+    python data_preprocessing_adding_ppi.py
 ## generate the embedding
     python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
     
