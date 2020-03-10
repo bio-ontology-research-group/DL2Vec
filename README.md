@@ -14,6 +14,8 @@ scipy >= 1.2.1 <br>
 scikit-learn >=0.20.3 <br>
 Groovy (Groovy Version: 2.4.10 JVM: 1.8.0_121) with Grape for dependency management (http://docs.groovy-lang.org/latest/html/documentation/grape.html).
 
+## Data used in my experiment
+The details can be found in [experiment folder](https://github.com/bio-ontology-research-group/DL2Vec/tree/master/Experiment)
 ## running DL2vec
 1. download all the files from this repository and put it into a directory named with DL2vec
 2. generate the embedding representation for each entity
