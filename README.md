@@ -36,6 +36,13 @@ you can also specify the following optional arguments:<br>
 3. -mincount minimum count value for Word2Vec
 4. -entity_list: the entity file in which each entity need to start the random walk and generate the embedding
 
+## the main embedding learning process
+
+<div class="product-image-wrapper">
+    <img class="product-image"
+         src="workflow.png" />
+</div>
+
 ## Output
 The script will save a model that can generate embeddings for each entity.
 
