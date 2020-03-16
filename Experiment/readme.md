@@ -1,4 +1,4 @@
-# apply DL2Vec on disease gene prioritization task
+# Apply DL2Vec on disease gene prioritization task
 We design DL2Vec and apply this method on disease gene prioritization task. 
 Here we put the dataset link and data preprocessing file here.
 In order to allow other people to reproduce the same performance, we describe more details in the following.
