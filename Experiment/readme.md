@@ -18,14 +18,16 @@ create a dictionary and put all the following dataset into data folder<br>
 
 
 
-## data preprocessing
+## Data preprocessing
     python data_preprocessing.py
-## data preprocessing with adding ppi data
+## Data preprocessing with adding ppi data
     python data_preprocessing_adding_ppi.py
-## generate the embedding
+## Generate the embedding
     python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
-    
-## train pointwise ranking model 
+  
+You can find the generated embedding for all the experiments in [DL2vec_Embeddings](https://bio2vec.cbrc.kaust.edu.sa/data/DL2vec/) 
+
+## Train pointwise ranking model 
     python pointwise_ranking.py -associations "disease and gene association file (dictionary format)" -ranking_candidate "all the genes that need to be prioritized (list format) -embedding_model "DL2vec embedding model)
 
 ## Paper citation
