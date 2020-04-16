@@ -48,6 +48,13 @@ The script will save a model that can generate embeddings for each entity.
 
 ## Reference
 If you find our work useful, please cite:
+@article{chen2020predicting,
+  title={Predicting candidate genes from phenotypes, functions, and anatomical site of expression},
+  author={Chen, Jun and Althagafi, Azza Th and Hoehndorf, Robert},
+  year={2020},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
 
 ## Acknowledgement
 We use two scripts which, [ProcessOntology.groovy](https://github.com/bio-ontology-research-group/DL2Vec/blob/master/DL2vec/ProcessOntology.groovy) and [getMetadata.groovy](https://github.com/bio-ontology-research-group/DL2Vec/blob/master/DL2vec/getMetadata.groovy) that are adapted from [OPA2vec](https://github.com/bio-ontology-research-group/opa2vec).
