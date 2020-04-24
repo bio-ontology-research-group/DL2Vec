@@ -18,7 +18,22 @@ Groovy (Groovy Version: 2.4.10 JVM: 1.8.0_121) with Grape for dependency managem
 1. download all the files from this repository and put it into a directory named with DL2vec
 2. generate the embedding representation for each entity
 ### generate the embeddings
-    python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
+    python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding [optional]"
+    
+data format examples:
+
+ontology file: phenomeNET ontology
+association_file: 
+
+23370 <http://purl.obolibrary.org/obo/GO_0005886>
+54502 <http://purl.obolibrary.org/obo/GO_0005634>
+54502 <http://purl.obolibrary.org/obo/GO_0003729>
+54502 <http://purl.obolibrary.org/obo/GO_0003723>
+79989 <http://purl.obolibrary.org/obo/GO_0120170>
+79989 <http://purl.obolibrary.org/obo/GO_0036064>
+where first term is the gene and second term is the GO annotations where can be found in the phenomeNET ontlogy
+
+output: the embedding output location
 
 where the following are mandatory Arguments: <br>
 1. ontology_file: ontology file congtains ontology in owl format
