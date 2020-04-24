@@ -31,7 +31,7 @@ association_file:
 54502 <http://purl.obolibrary.org/obo/GO_0003723> <br>
 79989 <http://purl.obolibrary.org/obo/GO_0120170> <br>
 79989 <http://purl.obolibrary.org/obo/GO_0036064> <br>
-where first term is the gene and second term is the GO annotations where can be found in the phenomeNET ontlogy <br>
+where first term is the gene id and second term is the GO annotations where can be found in the phenomeNET ontlogy <br>
 
 output: the embedding output location <br>
 
