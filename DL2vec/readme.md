@@ -35,7 +35,7 @@ where first term is the gene and second term is the GO annotations where can be 
 
 output: the embedding output location <br>
 
-where the following are mandatory Arguments: <br>
+the followings are mandatory Arguments: <br>
 1. ontology_file: ontology file congtains ontology in owl format
 2. association file: file contains entity-class associations
 3. outfile: output file contains the embedding model
