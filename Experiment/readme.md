@@ -21,7 +21,11 @@ create a dictionary and put all the following dataset into data folder<br>
 ## Data preprocessing
     python data_preprocessing.py
 ## Data preprocessing with adding ppi data
+Download the preprocessed files that map ontologies to proteins into data folder from: [PPI_data](https://bio2vec.cbrc.kaust.edu.sa/data/DL2vec/)<br>
+
+
     python data_preprocessing_adding_ppi.py
+
 ## Generate the embedding
     python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
   
