@@ -50,7 +50,7 @@ you can also specify the following optional arguments:<br>
 The script will save a model that can generate embeddings for each entity <br>
 
 ## Reference
-If you find our work useful, please cite: \br
+If you find our work useful, please cite: <br>
 @article{chen2020predicting,
   title={Predicting candidate genes from phenotypes, functions, and anatomical site of expression},
   author={Chen, Jun and Althagafi, Azza Th and Hoehndorf, Robert},
