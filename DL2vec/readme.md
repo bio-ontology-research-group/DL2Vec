@@ -53,7 +53,7 @@ The script will save a model that can generate embeddings for each entity <br>
 If you find our work useful, please cite: <br>
 @article{chen2020predicting,
   title={Predicting candidate genes from phenotypes, functions, and anatomical site of expression},
-  author={Chen, Jun and Althagafi, Azza Th and Hoehndorf, Robert},
+  author={Chen, Jun and Althagafi, Azza and Hoehndorf, Robert},
   year={2020},
   publisher={Cold Spring Harbor Laboratory}
 }
