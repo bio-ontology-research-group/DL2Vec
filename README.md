@@ -18,13 +18,13 @@ Groovy (Groovy Version: 2.4.10 JVM: 1.8.0_121) with Grape for dependency managem
 Details for predicting gene-disease associations with DL2Vec can be found in the [experiment folder](https://github.com/bio-ontology-research-group/DL2Vec/tree/master/Experiment).
 
 ## Running DL2vec
-1. git clone this repository
-2. generate the embeddings for each entity
+1. Git clone this repository ``git clone https://github.com/bio-ontology-research-group/DL2Vec.git``
+2. Generate the embeddings for each entity
 
 ### Generate the embeddings
     python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
 
-where the following are mandatory arguments: <br>
+Where the following are mandatory arguments: <br>
 1. ontology_file: ontology file contains ontology in OWL format
 2. association file: file contains entity-class associations
 3. outfile: output file contains the embedding model
@@ -50,7 +50,7 @@ The script will save a model that can generate embeddings for each entity.
 If you find our work useful, please cite: <br>
 @article{chen2020predicting,
   title={Predicting candidate genes from phenotypes, functions, and anatomical site of expression},
-  author={Chen, Jun and Althagafi, Azza Th and Hoehndorf, Robert},
+  author={Chen, Jun and Althagafi, Azza and Hoehndorf, Robert},
   year={2020},
   publisher={Cold Spring Harbor Laboratory}
 }
