@@ -19,10 +19,10 @@ Details for predicting gene-disease associations with DL2Vec can be found in the
 
 ## Running DL2vec
 1. Git clone this repository ``git clone https://github.com/bio-ontology-research-group/DL2Vec.git``
-2. Generate the embeddings for each entity
+2. Generate the embeddings for each entity:
 
-### Generate the embeddings
-    python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
+    ### Generate the embeddings
+        python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
 
 Where the following are mandatory arguments: <br>
 1. ontology_file: ontology file contains ontology in OWL format
