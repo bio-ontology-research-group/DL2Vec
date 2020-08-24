@@ -24,7 +24,6 @@ parser.add_argument("-mincount", nargs = '?', metavar = "min count", type = int,
                      help = "Minimum count value for word2vec model")
 parser.add_argument("-model", nargs = '?', metavar = "model", type = str,default='sg',
                      help = "Preferred word2vec architecture, sg or cbow")
-
 parser.add_argument("-entity_list", nargs ="?", metavar ="the entity list that needs to generate the embedding", type=str, default="",
                     help =" the entity list in which each entity that need to start random walk and generate the embedding")
 
@@ -48,17 +47,15 @@ if (association_file is ''):
 if (outfile is ''):
 	print ("\nError:Mandatory output-file name missing. For help, run: python runDL2Vec.py --help\n")
 	sys.exit()
-
 if entity_list is "":
     entity_list =association_file
-
 if (model != 'sg' and model != 'cbow'):
 	model ='sg'
+	
 commandF ="groovy ProcessOntology.groovy " + str(ontology_file) +" "+"elk"
 os.system(commandF)
 
 axiom_file = "axiomsorig.lst"
 G = generate_graph(association_file,axiom_file)
-
 
 gene_node_vector(G,entity_list,outfile)
