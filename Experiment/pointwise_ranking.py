@@ -426,6 +426,7 @@ if __name__ == '__main__':
 
     ranking_score=dict()
 
+    performance=1000000
 
     for test_data in test_datas:
 
@@ -439,7 +440,6 @@ if __name__ == '__main__':
 
         epoches=155
 
-        performance=1000000
 
 
         random.shuffle(train_diseases)
@@ -448,6 +448,8 @@ if __name__ == '__main__':
 
         for epoch in range(epoches):
             g1, d, y= generate_train_data(dic,disease_genes,gene_list,training_data)
+	    model,loss_value=train(model,opt,criterion)
+
             if epoch%10==9:
                 auc,rank, top_n_acc=evaluation(model,eval_data,dic,gene_list)
 
@@ -458,7 +460,6 @@ if __name__ == '__main__':
                     performance=rank
 
 
-            model,loss_value=train(model,opt,criterion)
 
         best_model = torch.load("data/"+str(performance)+"_best_performance.pt")
 
