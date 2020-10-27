@@ -1,5 +1,4 @@
-#  associate the human genes
-
+# associate the human genes
 # associate the mp
 # associate the go
 # associate the uberon
@@ -187,7 +186,6 @@ for index in gene_expression.index:
 
 gene_uberon_feature=dict()
 threshold=4.0
-
 gene_uberon_feature_0=dict()
 gene_uberon_feature_1_0=dict()
 gene_uberon_feature_2_0=dict()
@@ -267,10 +265,7 @@ for data in gene_go_feature.keys():
             go_intersection_features=set()
             mp_intersection_features=set()
             uberon_intersection_features=set()
-
-
             # print(gene_go_feature[data])
-
             for value in gene_go_feature[data]:
                 features.add(value)
             for value in gene_mp_feature[data]:
