@@ -35,5 +35,6 @@ You can find the generated embedding for all the experiments in [DL2vec_Embeddin
     python pointwise_ranking.py -associations "disease and gene association file (dictionary format)" -ranking_candidate "all the genes that need to be prioritized (list format) -embedding_model "DL2vec embedding model)
 
 ## Paper citation
-If you use our model in any terms of academic use, please cite our paper:
+If you use our model in any terms of academic use, please cite our paper: Chen, Jun, Azza Th Althagafi, and Robert Hoehndorf. "Predicting candidate genes from phenotypes, functions, and anatomical site of expression." (2020).
+
 
