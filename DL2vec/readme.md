@@ -24,13 +24,14 @@ data format examples:
 
 ontology file: phenomeNET ontology
 association_file: 
-
-23370 <http://purl.obolibrary.org/obo/GO_0005886> <br>
-54502 <http://purl.obolibrary.org/obo/GO_0005634> <br>
-54502 <http://purl.obolibrary.org/obo/GO_0003729> <br>
-54502 <http://purl.obolibrary.org/obo/GO_0003723> <br>
-79989 <http://purl.obolibrary.org/obo/GO_0120170> <br>
-79989 <http://purl.obolibrary.org/obo/GO_0036064> <br>
+```
+23370 <http://purl.obolibrary.org/obo/GO_0005886>
+54502 <http://purl.obolibrary.org/obo/GO_0005634>
+54502 <http://purl.obolibrary.org/obo/GO_0003729>
+54502 <http://purl.obolibrary.org/obo/GO_0003723>
+79989 <http://purl.obolibrary.org/obo/GO_0120170>
+79989 <http://purl.obolibrary.org/obo/GO_0036064>
+```
 where first term is the gene id and second term is the GO annotations where can be found in the phenomeNET ontlogy <br>
 
 output: the embedding output location <br>
