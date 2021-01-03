@@ -12,7 +12,7 @@ torch >= 1.0.1 <br>
 networkx >= 2.3 <br>
 scipy >= 1.2.1 <br>
 scikit-learn >=0.20.3 <br>
-Groovy (Groovy Version: 2.4.10 JVM: 1.8.0_121) with Grape for dependency management (http://docs.groovy-lang.org/latest/html/documentation/grape.html).
+Groovy (Groovy Version: 2.4.10 JVM: 1.8.0_121) with [Grape](http://docs.groovy-lang.org/latest/html/documentation/grape.html) for dependency management.
 
 ## Experiment
 Details for predicting gene-disease associations with DL2Vec can be found in the [experiment folder](https://github.com/bio-ontology-research-group/DL2Vec/tree/master/Experiment).
@@ -25,9 +25,9 @@ Details for predicting gene-disease associations with DL2Vec can be found in the
         python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding"
 
 Where the following are mandatory arguments: <br>
-1. ontology_file: ontology file contains ontology in OWL format
-2. association file: file contains entity-class associations
-3. outfile: output file contains the embedding model
+1. `ontology_file`: ontology file contains ontology in OWL format
+2. `association_file`: file contains entity-class associations
+3. `outfile`: output file contains the embedding model
 
 If one of these two mandatory files is missing, an error message will be displayed <br>
 you can also specify the following optional arguments:<br>
