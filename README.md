@@ -31,10 +31,10 @@ Where the following are mandatory arguments: <br>
 
 If one of these two mandatory files is missing, an error message will be displayed <br>
 you can also specify the following optional arguments:<br>
-1. -h, --help show the help message and exit
-2. -window_size: window size for Word2Vec
-3. -mincount minimum count value for Word2Vec
-4. -entity_list: the entity file in which each entity need to start the random walk and generate the embedding
+1. `-h`, --help show the help message and exit
+2. `-window_size` : window size for Word2Vec
+3. `-mincount` minimum count value for Word2Vec
+4. `-entity_list`: the entity file in which each entity need to start the random walk and generate the embedding
 
 ## The main embedding learning process
 
