@@ -48,7 +48,7 @@ The script will save a model that can generate embeddings for each entity.
 
 ## Reference
 If you find DL2vec useful for your research, please cite: <br>
-Chen, Jun, Azza Althagafi, and Robert Hoehndorf. "[Predicting candidate genes from phenotypes, functions, and anatomical site of expression." (2020)](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa879/5922810).
+Jun Chen, Azza Althagafi, and Robert Hoehndorf. "[Predicting candidate genes from phenotypes, functions, and anatomical site of expression." (2020)](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa879/5922810).
 
 
 
