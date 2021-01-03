@@ -31,7 +31,7 @@ Where the following are mandatory arguments: <br>
 
 If one of these two mandatory files is missing, an error message will be displayed <br>
 you can also specify the following optional arguments:<br>
-1. `-h`, --help show the help message and exit
+1. `-h/--help` show the help message and exit
 2. `-window_size` : window size for Word2Vec
 3. `-mincount` minimum count value for Word2Vec
 4. `-entity_list`: the entity file in which each entity need to start the random walk and generate the embedding
@@ -47,13 +47,9 @@ you can also specify the following optional arguments:<br>
 The script will save a model that can generate embeddings for each entity.
 
 ## Reference
-If you find our work useful, please cite: <br>
-@article{chen2020predicting,
-  title={Predicting candidate genes from phenotypes, functions, and anatomical site of expression},
-  author={Chen, Jun and Althagafi, Azza and Hoehndorf, Robert},
-  year={2020},
-  publisher={Cold Spring Harbor Laboratory}
-}
+If you find DL2vec useful for your research, please cite: <br>
+Chen, Jun, Azza Althagafi, and Robert Hoehndorf. "[Predicting candidate genes from phenotypes, functions, and anatomical site of expression." (2020)](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa879/5922810).
+
 
 
 ## Acknowledgement
