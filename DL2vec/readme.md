@@ -15,8 +15,8 @@ scikit-learn >=0.20.3 <br>
 Groovy (Groovy Version: 2.4.10 JVM: 1.8.0_121) with Grape for dependency management (http://docs.groovy-lang.org/latest/html/documentation/grape.html).
 
 ## running DL2vec
-1. download all the files from this repository and put it into a directory named with DL2vec
-2. generate the embedding representation for each entity
+1. Download all the files from this repository and put it into a directory named with DL2vec
+2. Generate the embedding representation for each entity
 ### generate the embeddings
     python runDL2vec.py -ontology "ontology file" -associations "association_file" -outfile "embedding output file" -entity_list "entities list need generating embeddding [optional]"
     
@@ -57,5 +57,6 @@ If you find our work useful, please cite: <br>
   year={2020},
   publisher={Cold Spring Harbor Laboratory}
 }
+
 ## Acknowledgement
 there are two scripts [ProcessOntology.groovy](https://github.com/bio-ontology-research-group/DL2Vec/blob/master/DL2vec/ProcessOntology.groovy) and [getMetadata.groovy](https://github.com/bio-ontology-research-group/DL2Vec/blob/master/DL2vec/getMetadata.groovy) that are adapted from [OPA2vec](https://github.com/bio-ontology-research-group/opa2vec).
