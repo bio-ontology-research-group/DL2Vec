@@ -86,27 +86,19 @@ if (prefreasoner.toLowerCase().equals("elk"))
     // Save the inferred ontology.
     //outputManager.saveOntology(infOnt,IRI.create((new File("inferredontologygo2.owl").toURI())));
 
-
-
     // Display Axioms
     OWLObjectRenderer renderer =new ManchesterOWLSyntaxOWLObjectRendererImpl ();
     renderer.setShortFormProvider(new SimpleShortFormProvider1());
     int numaxiom1= infOnt.getAxiomCount();
     Set<OWLClass> classes=infOnt.getClassesInSignature();
 
-
-
-
-
     //display original axioms
     //int numaxiom1= Ont.getAxiomCount();
     Set<OWLClass> classeso=ont.getClassesInSignature();
 
-
     FileWriter fwo= new FileWriter ("axiomsorig.lst");
     BufferedWriter bwo =new BufferedWriter (fwo);
     PrintWriter outo =new PrintWriter (bwo);
-
 
     for (OWLClass classo : classeso)
 	{
@@ -117,6 +109,7 @@ if (prefreasoner.toLowerCase().equals("elk"))
 	    classaxiom=renderer.render (claxiom);
 	    //out1.println (classess);
 	    outo.println (classaxiom.replaceAll("\n"," ").replaceAll(","," "));
+	    outo.flush() //Tilman comment
 	}
     }
 } else {
@@ -131,7 +124,6 @@ if (prefreasoner.toLowerCase().equals("elk"))
     renderer.setShortFormProvider(new SimpleShortFormProvider1());
     Set<OWLClass> classes=ont.getClassesInSignature();
 
-
     FileWriter fw= new FileWriter ("axiomsinf.lst");
     BufferedWriter bw =new BufferedWriter (fw);
     PrintWriter out =new PrintWriter (bw);
@@ -139,7 +131,6 @@ if (prefreasoner.toLowerCase().equals("elk"))
     FileWriter fw1= new FileWriter ("classes.lst");
     BufferedWriter bw1 =new BufferedWriter (fw1);
     PrintWriter out1 =new PrintWriter (bw1);
-
 
     for (OWLClass class1 : classes)
 	{
