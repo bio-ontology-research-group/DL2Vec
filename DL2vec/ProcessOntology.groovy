@@ -109,9 +109,9 @@ if (prefreasoner.toLowerCase().equals("elk"))
 	    classaxiom=renderer.render (claxiom);
 	    //out1.println (classess);
 	    outo.println (classaxiom.replaceAll("\n"," ").replaceAll(","," "));
-	    outo.flush() //Tilman comment
 	}
     }
+    outo.flush() //Tilman comment 
 } else {
     OWLReasonerFactory reasonerFactory = new Reasoner.ReasonerFactory();
     OWLReasoner reasoner =reasonerFactory.createReasoner(ont);
