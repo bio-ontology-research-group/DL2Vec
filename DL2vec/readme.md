@@ -41,11 +41,12 @@ the followings are mandatory Arguments: <br>
 2. `association file:` file contains entity-class associations
 3. `outfile:` output file contains the embedding model
 If one of these two mandatory files is missing, an error message will be displayed <br>
-you can also specify the following optional arguments:<br>
+
+You can also specify the following optional arguments:<br>
 1. `-h, --help` show the help message and exit
 2. `window_size:` window size for Word2Vec
 3. `-mincount` minimum count value for Word2Vec
-4. `-entity_list` : the entity file in which each entity need to start the random walk and generate the embedding (optinal)
+4. `-entity_list` : the entity file in which each entity need to start the random walk and generate the embedding
 
 ## Output
 The script will save a model that can generate embeddings for each entity <br>
