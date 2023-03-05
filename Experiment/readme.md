@@ -6,8 +6,10 @@ In order to allow other people to reproduce the same performance, we describe mo
 ##  Package dependency
 please refer the package dependencies as same as the dependencies of DL2vec
 
-## Data set downloading
-create a dictionary and put all the following dataset into data folder<br>
+## Data set downloading:
+Download the processed data set from [data](https://drive.google.com/file/d/17pHhngaH4LrP9q06xPWEgM_j2kC-bohT/view?usp=share_link)
+
+The dataset downloaded from the following resources: <br>
 - [Genotypes and Mammalian Phenotype Annotations for Marker Type Genes excluding conditional mutation](http://www.informatics.jax.org/downloads/reports/MGI_GenePheno.rpt)
 - [Human/Mouse Orthology with phenotypes](http://www.informatics.jax.org/downloads/reports/HMD_HumanPhenotype.rpt)<br>
 [Association of genes with Diseases](http://www.informatics.jax.org/downloads/reports/MGI_DO.rpt)<br>
